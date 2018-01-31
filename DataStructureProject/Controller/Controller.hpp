@@ -11,6 +11,7 @@
 
 #include <iostream>
 #include <vector>
+#include "FileController.hpp"
 #include "Tools/Timer.hpp"
 
 class Controller
