@@ -10,6 +10,7 @@
 		9E050FD82022440100B110AD /* Runner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E050FD72022440100B110AD /* Runner.cpp */; };
 		9E050FDC202244AA00B110AD /* Controller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E050FDA202244AA00B110AD /* Controller.cpp */; };
 		9E050FE02022471200B110AD /* Timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E050FDE2022471200B110AD /* Timer.cpp */; };
+		9E050FE320224D3B00B110AD /* FileController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E050FE120224D3B00B110AD /* FileController.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,11 @@
 		9E050FDB202244AA00B110AD /* Controller.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Controller.hpp; sourceTree = "<group>"; };
 		9E050FDE2022471200B110AD /* Timer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Timer.cpp; sourceTree = "<group>"; };
 		9E050FDF2022471200B110AD /* Timer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Timer.hpp; sourceTree = "<group>"; };
+		9E050FE120224D3B00B110AD /* FileController.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FileController.cpp; sourceTree = "<group>"; };
+		9E050FE220224D3B00B110AD /* FileController.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FileController.hpp; sourceTree = "<group>"; };
+		9E050FE520224DF300B110AD /* CrimeData.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CrimeData.hpp; sourceTree = "<group>"; };
+		9E050FE620224E1400B110AD /* CrimeData.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CrimeData.cpp; sourceTree = "<group>"; };
+		9E050FE720224E3500B110AD /* crime.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = crime.csv; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +71,7 @@
 			children = (
 				9E050FD72022440100B110AD /* Runner.cpp */,
 				9E050FD92022443400B110AD /* Controller */,
+				9E050FE420224DB700B110AD /* Data */,
 			);
 			path = DataStructureProject;
 			sourceTree = "<group>";
@@ -75,6 +82,8 @@
 				9E050FDD202246D000B110AD /* Tools */,
 				9E050FDA202244AA00B110AD /* Controller.cpp */,
 				9E050FDB202244AA00B110AD /* Controller.hpp */,
+				9E050FE120224D3B00B110AD /* FileController.cpp */,
+				9E050FE220224D3B00B110AD /* FileController.hpp */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -86,6 +95,16 @@
 				9E050FDF2022471200B110AD /* Timer.hpp */,
 			);
 			path = Tools;
+			sourceTree = "<group>";
+		};
+		9E050FE420224DB700B110AD /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				9E050FE520224DF300B110AD /* CrimeData.hpp */,
+				9E050FE620224E1400B110AD /* CrimeData.cpp */,
+				9E050FE720224E3500B110AD /* crime.csv */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +167,7 @@
 				9E050FE02022471200B110AD /* Timer.cpp in Sources */,
 				9E050FD82022440100B110AD /* Runner.cpp in Sources */,
 				9E050FDC202244AA00B110AD /* Controller.cpp in Sources */,
+				9E050FE320224D3B00B110AD /* FileController.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
