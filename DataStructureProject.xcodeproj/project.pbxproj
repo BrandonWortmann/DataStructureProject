@@ -38,6 +38,7 @@
 		9E050FE520224DF300B110AD /* CrimeData.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CrimeData.hpp; sourceTree = "<group>"; };
 		9E050FE620224E1400B110AD /* CrimeData.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CrimeData.cpp; sourceTree = "<group>"; };
 		9E050FE720224E3500B110AD /* crime.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = crime.csv; sourceTree = "<group>"; };
+		9ECD48302024EE1400393F74 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +74,7 @@
 				9E050FD72022440100B110AD /* Runner.cpp */,
 				9E050FD92022443400B110AD /* Controller */,
 				9E050FE420224DB700B110AD /* Data */,
+				9ECD482E2024EDCC00393F74 /* Model */,
 			);
 			path = DataStructureProject;
 			sourceTree = "<group>";
@@ -106,6 +108,22 @@
 				9E050FE720224E3500B110AD /* crime.csv */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		9ECD482E2024EDCC00393F74 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9ECD482F2024EDF800393F74 /* Structures */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9ECD482F2024EDF800393F74 /* Structures */ = {
+			isa = PBXGroup;
+			children = (
+				9ECD48302024EE1400393F74 /* Header.h */,
+			);
+			path = Structures;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
