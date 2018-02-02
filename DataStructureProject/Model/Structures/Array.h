@@ -6,8 +6,8 @@
 //  Copyright © 2018 CTEC. All rights reserved.
 //
 
-#ifndef Header_h
-#define Header_h
+#ifndef Array_h
+#define Array_h
 
 #include <assert.h>
 #include <iostream>
@@ -15,7 +15,7 @@
 using namespace std;
 
 template <class Type>
-class Aarray
+class Array
 {
 private:
     Type * internalArray;
@@ -24,11 +24,11 @@ private:
 public:
     Array<Type>(int size);
     
-    array<Type>(const Array<Type> & toCopy);
+    Array<Type>(const Array<Type> & toCopy);
     
     ~Array<Type>();
     
-    Array<Type & operator = (const Array<Type> & toReplace);
+    Array<Type> & operator = (const Array<Type> & toReplace);
     Type& operator [] (int index);
     Type operator [] (int index) const;
     
@@ -36,14 +36,14 @@ public:
     Type getFromIndex(int index);
     void setAtIndex(int index, Type data);
     
-}
+    };
 template <class Type>
 Array<Type> :: Array(int size)
 {
     assert(size > 0);
     this -> size = size;
     
-    internalArray = new Type[size]
+    internalArray = new Type[size];
         
 }
 
@@ -74,7 +74,7 @@ Array<Type> & Array<Type> :: operator = (const Array<Type> & toAssign)
     {
         if(size != toAssign.getSize())
         {
-            delete [] internalAray;
+            delete [] internalArray;
             size = toAssign.getSize();
             internalArray + new Type [size];
         }
@@ -103,7 +103,7 @@ Type Array<Type> :: operator [] (int index) const
 }
 
 template <class Type>
-int Array<Type :: getSize() const
+int Array<Type> :: getSize() const
 {
     return size;
 }
