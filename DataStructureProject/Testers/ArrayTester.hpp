@@ -17,7 +17,7 @@
 class ArrayTester
 {
 public:
-    void tesrrayUse();
+    void testArrayUse();
     void testAdvancedArray();
 };
 
