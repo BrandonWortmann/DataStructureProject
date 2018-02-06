@@ -46,4 +46,27 @@ void ArrayTester :: testAdvancedArray()
 {
     vector<CrimeData> test = FileController :: readCrimeDataToVector("/Users/bwor0809/Documents/C++/DataStructureProject/DataStructureProject/Data/crime.csv");
     
+    int arraySize = test.size();
+    
+    Array<CrimeData> data(arraySize);
+    for(int index = 0; index < arraySize; index++)
+    {
+        data[index] = test[index];
+    }
+    
+    Timer vectorTimer;
+    Timer arrayTimer;
+    
+    vectorTimer.startTimer();
+    cout << test[3425] << endl;
+    vectorTimer.stopTimer();
+    vectorTimer.displayInformation();
+    
+    arrayTimer.startTimer();
+    cout << data[3425] << endl;
+    arrayTimer.stopTimer();
+    arrayTimer.displayInformation();
+    
+    
+    
 }
