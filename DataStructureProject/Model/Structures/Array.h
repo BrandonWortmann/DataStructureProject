@@ -76,10 +76,10 @@ Array<Type> & Array<Type> :: operator = (const Array<Type> & toAssign)
         {
             delete [] internalArray;
             size = toAssign.getSize();
-            internalArray + new Type [size];
+            internalArray = new Type [size];
         }
         
-        for(int i = 0; index < size; i++)
+        for(int i = 0; i < size; i++)
         {
             internalArray[i] = toAssign[i];
         }

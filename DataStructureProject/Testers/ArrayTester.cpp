@@ -36,6 +36,14 @@ void ArrayTester :: testArrayUse()
     thirdArray[5] = 123;
     cout << thirdArray[5] << endl;
     
-    
+    cout << firstArray.getSize() << endl;
+    cout << firstArray.getFromIndex(4) << endl;
+    firstArray.setAtIndex(4 , 321);
+    cout << firstArray.getFromIndex(4) << endl;
         
+}
+void ArrayTester :: testAdvancedArray()
+{
+    vector<CrimeData> test = FileController :: readCrimeDataToVector("/Users/bwor0809/Documents/C++/DataStructureProject/DataStructureProject/Data/crime.csv");
+    
 }
