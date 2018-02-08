@@ -39,6 +39,7 @@
 		9E050FE520224DF300B110AD /* CrimeData.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CrimeData.hpp; sourceTree = "<group>"; };
 		9E050FE620224E1400B110AD /* CrimeData.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CrimeData.cpp; sourceTree = "<group>"; };
 		9E050FE720224E3500B110AD /* crime.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = crime.csv; sourceTree = "<group>"; };
+		9E457093202CD9310074B478 /* dataStructureUMLET.uxf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = dataStructureUMLET.uxf; sourceTree = "<group>"; };
 		9E65A9C3202A33B400ABC4EE /* ArrayTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ArrayTester.cpp; sourceTree = "<group>"; };
 		9E65A9C4202A33B400ABC4EE /* ArrayTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ArrayTester.hpp; sourceTree = "<group>"; };
 		9E65A9C8202A415D00ABC4EE /* Node.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Node.hpp; sourceTree = "<group>"; };
@@ -76,6 +77,7 @@
 		9E050FCF2022435600B110AD /* DataStructureProject */ = {
 			isa = PBXGroup;
 			children = (
+				9E457093202CD9310074B478 /* dataStructureUMLET.uxf */,
 				9E65A9C2202A338E00ABC4EE /* Testers */,
 				9E050FD72022440100B110AD /* Runner.cpp */,
 				9E050FD92022443400B110AD /* Controller */,
