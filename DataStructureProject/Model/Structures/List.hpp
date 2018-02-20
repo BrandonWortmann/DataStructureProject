@@ -10,7 +10,7 @@
 #define List_hpp
 
 #include <assert.h>
-#inclde "../../Nodes/LinearNode.hpp"
+#include "../Nodes/LinearNode.hpp"
 
 template <class Type>
 class List

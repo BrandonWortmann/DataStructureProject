@@ -11,20 +11,20 @@
 
 #include "Node.hpp"
 
-tmplate <class Type>
+template <class Type>
 class LinearNode : public Node<Type>
 {
 protected:
     LinearNode<Type> * next;
     
 public:
-    Linearode();
+    LinearNode();
     LinearNode(Type data);
     LinearNode(Type data, LinearNode<Type> * next);
     
     void setNextNode(LinearNode<Type> * next);
     LinearNode<Type> * getNextNode();
-}
+};
 
 template <class Type>
 LinearNode<Type> :: LinearNode() : Node<Type>()
@@ -39,7 +39,7 @@ LinearNode<Type> :: LinearNode(Type data) : Node<Type>(data)
 }
 
 template <class Type>
-LinearNode<Type> :: LineaNode(Type data, LinearNode<Type> * next) : Node<Type>(data)
+LinearNode<Type> :: LinearNode(Type data, LinearNode<Type> * next) : Node<Type>(data)
 {
     this -> next = next;
 }

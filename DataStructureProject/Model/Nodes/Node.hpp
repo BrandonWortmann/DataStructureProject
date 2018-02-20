@@ -21,7 +21,7 @@ public:
     Node();
     Node(Type data);
     void setData(Type data);
-    type getData();
+    Type getData();
     
 };
 

@@ -6,19 +6,22 @@
 //  Copyright © 2018 CTEC. All rights reserved.
 //
 
+
+#include "List.hpp"
+
+
+using namespace std;
+
 #ifndef LinkedList_hpp
 #define LinkedList_hpp
 
-#include <List.hpp>
-
-using namespace std;
 
 template <class Type>
 class LinkedList : public List<Type>
 {
 protected:
     LinearNode<Type> * front;
-    LineraNode<Type> * end;
+    LinearNode<Type> * end;
     
 public:
     LinkedList();
@@ -42,7 +45,7 @@ template <class Type>
 LinkedList<Type> :: LinkedList()
 {
     this->front = nullptr;
-    this->end = nullptr
+    this->end = nullptr;
     this->size = 0;
 }
 
@@ -53,7 +56,7 @@ LinkedList<Type> :: ~LinkedList()
     while (front != nullptr)
     {
         front = destroyStructure->getNextNode();
-        delete destroyStructure
+        delete destroyStructure;
         destroyStructure = front;
     }
 }
@@ -91,7 +94,7 @@ void LinkedList<Type> :: addAtIndex(int index, Type item)
         if(index == 0)
         {
             toBeAdded->setNextNode(front);
-            front = toBeAdded
+            front = toBeAdded;
         }
         else
         {
@@ -108,6 +111,23 @@ void LinkedList<Type> :: addAtIndex(int index, Type item)
         this->size++;
     }
 }
+template <class Type>
+Type LinkedList<Type> :: getFromIndex(int index)
+{
+    assert(index >= 0 && index < this->size);
+    Type data;
+    
+    LinearNode<Type> * current = front;
+    
+    for(int position = 0; position < index; position++)
+    {
+        current = current->getNextNode();
+    }
+    
+    data = current -> getData();
+    
+    return data;
+}
 
 template <class Type>
 Type LinkedList<Type> :: remove(int index)
@@ -118,7 +138,7 @@ Type LinkedList<Type> :: remove(int index)
     LinearNode<Type> * toBeRemoved = nullptr;
     LinearNode<Type> * previous = nullptr;
     
-    Type removeData;
+    Type removedData;
     
     if(index == 0)
     {
@@ -150,7 +170,7 @@ Type LinkedList<Type> :: remove(int index)
     
     removedData = toBeRemoved->getData();
     delete toBeRemoved;
-    delete removedData;
+    return removedData;
 }
 
 template <class Type>
@@ -166,7 +186,7 @@ LinearNode<Type> * LinkedList<Type> :: getFront()
 }
 
 template <class Type>
-int LinearNode<Type> * LinkedList<Type> :: getSize() const
+int LinkedList<Type> :: getSize() const
 {
     return this->size;
 }
