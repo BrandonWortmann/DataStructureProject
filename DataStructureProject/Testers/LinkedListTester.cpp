@@ -33,6 +33,17 @@ void LinkedListTester :: testListBasics()
     numbers.addAtIndex(0, 2312);
     cout << numbers.getFront()->getData() << " is at the front of the list and should be 2312" << endl;
     cout << numbers.getEnd()->getData() << " is at the end of the list and should be 32567" << endl;
+    
+    LinkedList<string> words;
+    words.add("hi");
+    cout << words.getFront()->getData() << " is at the front of the list" << endl;
+    words.add("Fries");
+    cout << words.getEnd()->getData() << " is at the end of the list" << endl;
+    words.add("Pizza");
+    cout << "now " << words.getEnd()->getData() << " is at the end of the list" << endl;
+    
+
+    
 }
 
 

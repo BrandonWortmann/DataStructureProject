@@ -15,6 +15,7 @@
 #include "Tools/Timer.hpp"
 #include "../Model/Structures/Array.h"
 #include "../Testers/ArrayTester.hpp"
+#include "../Testers/LinkedListTester.hpp"
 
 class Controller
 {
