@@ -13,7 +13,7 @@
 #include <vector>
 #include "FileController.hpp"
 #include "Tools/Timer.hpp"
-#include "../Model/Structures/Array.h"
+#include "../Model/Structures/Linear/Array.h"
 #include "../Testers/ArrayTester.hpp"
 #include "../Testers/LinkedListTester.hpp"
 
