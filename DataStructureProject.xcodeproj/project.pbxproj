@@ -51,6 +51,7 @@
 		9EE239692034C69A00D15726 /* LinkedListTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LinkedListTester.cpp; sourceTree = "<group>"; };
 		9EE2396A2034C69A00D15726 /* LinkedListTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinkedListTester.hpp; sourceTree = "<group>"; };
 		9EFEFB9E203F499400753312 /* Stack.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Stack.hpp; sourceTree = "<group>"; };
+		9EFEFBA1203F4E9200753312 /* Queue.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Queue.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +169,7 @@
 				9E457095202CE1A80074B478 /* List.hpp */,
 				9ECD48302024EE1400393F74 /* Array.h */,
 				9EFEFB9E203F499400753312 /* Stack.hpp */,
+				9EFEFBA1203F4E9200753312 /* Queue.hpp */,
 			);
 			path = Linear;
 			sourceTree = "<group>";
