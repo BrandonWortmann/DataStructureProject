@@ -20,12 +20,12 @@ public:
     
     void push(Type data);
     Type pop();
-    Type();
+    Type peek();
     
     void add(Type data);
     void addAtIndex(int index, Type data);
-    Type getFromIdex(int index);
-    Type remove(int index;)
+    Type getFromIndex(int index);
+    Type remove(int index);
 };
 
 template <class Type>
@@ -35,7 +35,7 @@ Stack<Type> :: Stack() : LinkedList<Type>()
     
 }
 
-template <classType>
+template <class Type>
 Stack<Type> :: ~Stack()
 {
     while(this->size > 0)
@@ -48,11 +48,11 @@ template <class Type>
 void Stack<Type> :: push(Type data)
 {
     
-    LinearNode<Type> * ad = new LineraNode<Type>(data);
+    LinearNode<Type> * add = new LinearNode<Type>(data);
     
     if(this->size == 0)
     {
-        this->end = add
+        this->end = add;
     }
     else
     {
@@ -63,14 +63,14 @@ void Stack<Type> :: push(Type data)
     this->size++;
 }
 
-template <class Tpe>
+template <class Type>
 void Stack<Type> :: add(Type data)
 {
     push(data);
 }
 
-template <cladd Type>
-void Stack<Type> :: addAtIndex(intindex, Type data)
+template <class Type>
+void Stack<Type> :: addAtIndex(int index, Type data)
 {
     assert(index == 0);
     push(data);
@@ -82,7 +82,7 @@ Type Stack<Type> :: pop()
     assert (this->size > 0);
     Type removed = this->front->getData();
     
-    LineraNode<Type> * removedNode = this->getFront();
+    LinearNode<Type> * removedNode = this->getFront();
     this->front = removedNode->getNextNode();
     delete removedNode;
     
@@ -94,7 +94,7 @@ Type Stack<Type> :: pop()
 template <class Type>
 Type Stack<Type> :: remove(int index)
 {
-    assert(index == 0)
+    assert(index == 0);
     return pop();
 }
 

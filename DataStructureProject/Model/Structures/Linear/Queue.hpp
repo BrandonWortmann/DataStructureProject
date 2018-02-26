@@ -32,7 +32,7 @@ public:
 };
 
 template <class Type>
-Queue<Type> :: Queue() : LInkedList<Type>()
+Queue<Type> :: Queue() : LinkedList<Type>()
 {
     
     
@@ -63,7 +63,7 @@ void Queue<Type> :: enqueue(Type item)
     }
     
     this->end = added;
-    this->size++
+    this->size++;
 }
 
 template <class Type>
@@ -83,7 +83,7 @@ void Queue<Type> :: add(Type item)
 template <class Type>
 Type Queue<Type> :: dequeue()
 {
-    asseert(this->size > 0);
+    assert(this->size > 0);
     
     Type returned = this-> front->getData();
     
@@ -118,7 +118,7 @@ template <class Type>
 Type Queue<Type> :: peek()
 {
     assert(this->size > 0);
-    return this -getFront()->getData();
+    return this -> getFront()->getData();
 }
 
 template <class Type>
