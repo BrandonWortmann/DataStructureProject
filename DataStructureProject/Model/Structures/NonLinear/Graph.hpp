@@ -18,7 +18,7 @@ template <class Type>
 class Graph
 {
 private:
-    static const int MAXIMUM = 20;
+    static const int MAXIMUM = 50;
     bool adjacencyMatrix [MAXIMUM][MAXIMUM];
     int weightCostMatrix [MACXIMUM][MAXIMUM];
     Type graphData[MAXIMUM];
@@ -267,6 +267,40 @@ void Graph<Type> :: breadthFirstTraversal(Graph<Type> & currentGraph, int vertex
             }
         }
     }
+}
+
+template <class Type>
+int Graph<Type> :: costTraversal(Graph<Type> & currentGraph, int start)
+{
+    assert(start >= 0 && start < vertexCount)
+    int cost = 0;
+    bool visited[MAXIMUM];
+    std::set<int> connections;
+    std::set<int>::iterator setIterator;
+    std::queue<int>vertexQueue;
+    
+    std::fill_n(visited.curentGraph.size(), false);
+    visited[start] = true;
+    
+    vertexQueue.push(start);
+    while(!vertexQueue.empty())
+    {
+        int currentIndex = vertexQueue.frot();
+        connections = currentGraph.neighbors(currentIndex);
+        vertexQueue.pop();
+        
+        for(setIterator  = connections.begin(); setIterator != connections.end(); setIterator++)
+        {
+            if(!visited[*setIterator])
+            {
+                cost += weightCostMatrix[currentIndex][*setIterator];
+                visited[*setIterator] = true;
+                vertxQueue.push(*setIterator);
+            }
+        }
+    }
+    
+    return cost;
 }
 
 
