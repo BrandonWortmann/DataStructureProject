@@ -4,7 +4,7 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>110</x>
+      <x>0</x>
       <y>110</y>
       <w>440</w>
       <h>200</h>
@@ -24,8 +24,8 @@ bg=green</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>630</x>
-      <y>150</y>
+      <x>580</x>
+      <y>100</y>
       <w>600</w>
       <h>410</h>
     </coordinates>
@@ -47,6 +47,39 @@ bg=green</panel_attributes>
 +setRightNode(BinaryTreeNode&lt;Type&gt;*) : void
 
 bg=magenta</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>220</x>
+      <y>550</y>
+      <w>680</w>
+      <h>400</h>
+    </coordinates>
+    <panel_attributes>/Tree&lt;Type&gt;/
+--
+
+# root : BinarytreeNode&lt;Type&gt;
+
+--
+*Iformational Methods*
++ getSize() : int
++ getHeigth() : int
++ isComlpete() : bool
++ isBalanced() : bool
+
+*Data Methods*
++ insert(Type) : void
++ contains(Type) : bool
++ remove(Type) : void
+
+*Traversals*
++ inOrderTraversal() : void
++ preOrderTraversal(); void 
++ postOrderTraversal() :void
+
+bg=orange</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>
