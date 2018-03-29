@@ -5,7 +5,7 @@
     <id>UMLClass</id>
     <coordinates>
       <x>0</x>
-      <y>110</y>
+      <y>20</y>
       <w>440</w>
       <h>200</h>
     </coordinates>
@@ -24,8 +24,8 @@ bg=green</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>580</x>
-      <y>100</y>
+      <x>450</x>
+      <y>0</y>
       <w>600</w>
       <h>410</h>
     </coordinates>
@@ -52,8 +52,8 @@ bg=magenta</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>220</x>
-      <y>550</y>
+      <x>110</x>
+      <y>450</y>
       <w>680</w>
       <h>400</h>
     </coordinates>
@@ -80,6 +80,56 @@ bg=magenta</panel_attributes>
 + postOrderTraversal() :void
 
 bg=orange</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>860</x>
+      <y>490</y>
+      <w>800</w>
+      <h>720</h>
+    </coordinates>
+    <panel_attributes>BinarySearchTree&lt;Type&gt;
+--
+*Structure*
++ BinarySearchTree() : Contructor
++ ~BinarySearchTree() : Destructor
+
+*Informational Methods*
++ getSize() : int
++getHeight() : int
++ isComplete() : bool
++ isBalanced() : bool
+
+*Recursive Information Helpers*
+# calculateSize(BinaryTreeNode&lt;Type&gt; * startNode) : int
+# calculateHeight(BinaryTreeNode&lt;Type&gt;* startNode) : int
+# isBalanced(BinaryTreeNode&lt;Type&gt; * startNode) : bool
+# is Complete(BinaryTreeNode&lt;Type&gt; * startNode, int index, int size) : bool
+
+*Data Methods*
++ insert(Type) : void
++ contains(Type) : bool
++ remove(Type) : void
+
+*Recursive Data Helpers*
+#removeode(BinaryTreeNode&lt;Type&gt; * removeMe) : void
+
+*Traversals*
++ inOrderTraversal() : void
++ preOrderTraversals() : void
++ postOrderTraversal() : void
+
+*Recursive Traversal Helpers*
+# inOrderTraversal(BinaryTreeNode&lt;Type&gt; * inStart) : void
+# preOrderTraversal(BinaryTreeNode&lt;Type&gt; * preStart) : void
+# postOrderTraversal(BinaryTreeNode&lt;Type&gt; * postStart) : void
+# getRightMostCholdBinaryTreeNode&lt;Type&gt; * current) : BinaryTreeNode&lt;Type&gt;*
+# getLeftMostChild(BinaryTreeNode&lt;Type&gt; * current) : BinaryTreeNode&lt;Type&gt;*
+
+bg=blue
+</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>

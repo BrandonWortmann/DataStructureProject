@@ -44,6 +44,7 @@
 		9E050FE520224DF300B110AD /* CrimeData.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CrimeData.hpp; sourceTree = "<group>"; };
 		9E050FE620224E1400B110AD /* CrimeData.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CrimeData.cpp; sourceTree = "<group>"; };
 		9E050FE720224E3500B110AD /* crime.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = crime.csv; sourceTree = "<group>"; };
+		9E134880206D60BC00E010CE /* BinarySearchTree.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BinarySearchTree.hpp; sourceTree = "<group>"; };
 		9E1F66A1205AE97B00DC3DD2 /* SortingTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SortingTester.cpp; sourceTree = "<group>"; };
 		9E1F66A2205AE97B00DC3DD2 /* SortingTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SortingTester.hpp; sourceTree = "<group>"; };
 		9E457093202CD9310074B478 /* dataStructureUMLET.uxf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = dataStructureUMLET.uxf; sourceTree = "<group>"; };
@@ -195,6 +196,7 @@
 			children = (
 				9EF348AB2060363E004C3625 /* Graph.hpp */,
 				9E4869E3206AD43500972172 /* Tree.hpp */,
+				9E134880206D60BC00E010CE /* BinarySearchTree.hpp */,
 			);
 			path = NonLinear;
 			sourceTree = "<group>";
