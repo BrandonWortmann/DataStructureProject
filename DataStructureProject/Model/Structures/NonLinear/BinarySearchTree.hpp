@@ -109,9 +109,13 @@ void BinarySearchTree<Type> :: preOrderTraversal()
 template <class Type>
 void BinarySearchTree<Type> :: preOrderTraversal(BinaryTreeNode<Type> * preStart)
 {
-    cout << preStart->getData() << endl;
-    preOrderTraversal(preStart->getLeft());
-    preOrderTraversal(preStart->getRight());
+    if(preStart != nullptr)
+    {
+        cout << preStart->getData() << endl;
+        preOrderTraversal(preStart->getLeft());
+        preOrderTraversal(preStart->getRight());
+    }
+    
 }
 
 template <class Type>
@@ -123,9 +127,13 @@ void BinarySearchTree<Type> :: postOrderTraversal()
 template <class Type>
 void BinarySearchTree<Type> :: postOrderTraversal(BinaryTreeNode<Type> * postStart)
 {
-    postOrderTraversal(postStart->getLeft());
-    postOrderTraversal(postStart->getRight());
-    cout << postStart->getData() << endl;
+    if(postStart != nullptr)
+    {
+        postOrderTraversal(postStart->getLeft());
+        postOrderTraversal(postStart->getRight());
+        cout << postStart->getData() << endl;
+    }
+    
 }
 
 template <class Type>
@@ -158,7 +166,7 @@ int BinarySearchTree<Type> :: calculateSize(BinaryTreeNode<Type> * current)
 {
     if(current != nullptr)
     {
-        return calculatesSize(current->getLeft()) + calculateSize(current->getRight()) +1;
+        return calculateSize(current->getLeft()) + calculateSize(current->getRight()) +1;
     }
     return 0;
 }
@@ -219,12 +227,12 @@ bool BinarySearchTree<Type> :: isBalanced(BinaryTreeNode<Type> * current)
     {
         return true;
     }
-    leftHeight = calculateHeight(current->getLeftNode());
-    rightHeight = calculateHeight(current->getRightNode());
+    leftHeight = calculateHeight(current->getLeft());
+    rightHeight = calculateHeight(current->getRight());
     
     int heightDifference = abs(leftHeight - rightHeight);
     bool leftBalanced = isBalanced(current -> getLeft());
-    bool rightBalanced = isBalanced(current->getRightNode());
+    bool rightBalanced = isBalanced(current->getRight());
     
     if(heightDifference <= 1 && leftBalanced && rightBalanced)
     {
