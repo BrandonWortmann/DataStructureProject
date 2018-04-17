@@ -22,9 +22,9 @@ public:
     BinaryTreeNode();
     BinaryTreeNode(Type data);
     
-    BinaryTreeNode<Type> * getRoot();
-    BinaryTreeNode<Type> * getLeft();
-    BinaryTreeNode<Type> * getRight();
+    BinaryTreeNode<Type> * getRootNode();
+    BinaryTreeNode<Type> * getLeftNode();
+    BinaryTreeNode<Type> * getRightNode();
     
     void setRootNode(BinaryTreeNode<Type> * root);
     void setLeftNode(BinaryTreeNode<Type> * left);
@@ -69,19 +69,19 @@ void BinaryTreeNode<Type> :: setRightNode(BinaryTreeNode<Type> * right)
 }
 
 template <class Type>
-BinaryTreeNode<Type> * BinaryTreeNode<Type> :: getRoot()
+BinaryTreeNode<Type> * BinaryTreeNode<Type> :: getRootNode()
 {
     return root;
 }
 
 template <class Type>
-BinaryTreeNode<Type> * BinaryTreeNode<Type> :: getLeft()
+BinaryTreeNode<Type> * BinaryTreeNode<Type> :: getLeftNode()
 {
     return left;
 }
 
 template <class Type>
-BinaryTreeNode<Type> * BinaryTreeNode<Type> :: getRight()
+BinaryTreeNode<Type> * BinaryTreeNode<Type> :: getRightNode()
 {
     return right;
 }
