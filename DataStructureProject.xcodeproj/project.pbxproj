@@ -46,6 +46,7 @@
 		9E050FE720224E3500B110AD /* crime.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = crime.csv; sourceTree = "<group>"; };
 		9E134880206D60BC00E010CE /* BinarySearchTree.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BinarySearchTree.hpp; sourceTree = "<group>"; };
 		9E15DF3920939F64004AE29A /* hashNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = hashNode.hpp; sourceTree = "<group>"; };
+		9E15DF3C2093A188004AE29A /* Hashtable.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Hashtable.hpp; sourceTree = "<group>"; };
 		9E1F66A1205AE97B00DC3DD2 /* SortingTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SortingTester.cpp; sourceTree = "<group>"; };
 		9E1F66A2205AE97B00DC3DD2 /* SortingTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SortingTester.hpp; sourceTree = "<group>"; };
 		9E457093202CD9310074B478 /* dataStructureUMLET.uxf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = dataStructureUMLET.uxf; sourceTree = "<group>"; };
@@ -203,6 +204,7 @@
 				9E4869E3206AD43500972172 /* Tree.hpp */,
 				9E134880206D60BC00E010CE /* BinarySearchTree.hpp */,
 				9EE94EBE20866B7300733A8E /* AVLTree.hpp */,
+				9E15DF3C2093A188004AE29A /* Hashtable.hpp */,
 			);
 			path = NonLinear;
 			sourceTree = "<group>";
